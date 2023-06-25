@@ -11,9 +11,12 @@ pwd2_path := "C:\Users\Stasiu Wolanski\Projects\AutoHotkey\Data\pwd2.txt"
 :*:/cem::sw902@cam.ac.uk
 
 ; General shortcuts
++CapsLock::SetCapsLockState(!GetKeyState("CapsLock", "T"))
+CapsLock::Esc
 NumpadDiv::Send("^{Backspace}")
 NumpadMult::Send("^f")
 #!`;::Send("!{F4}")
+#!Enter::WinMaximize "A"
 
 ; Spotify shortcuts
 #!s::{
